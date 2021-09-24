@@ -1,0 +1,4 @@
+name: Timbuktu
+version: '${project.version}'
+main: com.timbuktu
+api-version: 1.17
