@@ -6,7 +6,7 @@
 
     <groupId>com.Timbuktu</groupId>
     <artifactId>Timbuktu</artifactId>
-    <version>0.0.1</version>
+    <version>0.4</version>
     <packaging>jar</packaging>
 
     <name>Timbuktu</name>

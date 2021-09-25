@@ -2,3 +2,8 @@ name: Timbuktu
 version: '${project.version}'
 main: com.Timbuktu
 api-version: 1.17
+commands:
+  lastDeathLocation:
+    description: Shows the coordinates of your last death location
+    aliases: ldl
+    usage: /lastDeathLocation

@@ -11,10 +11,13 @@ public class DeathListener implements Listener {
     public void onPlayerDeath(PlayerDeathEvent event) {
         Player deadPlayer = event.getEntity();
         Location lastDeathLocation = deadPlayer.getLocation();
-        double X = lastDeathLocation.getX();
-        double Y = lastDeathLocation.getY();
-        double Z = lastDeathLocation.getZ();
+        int X = (int) lastDeathLocation.getX();
+        int Y = (int) lastDeathLocation.getY();
+        int Z = (int) lastDeathLocation.getZ();
 
+        Timbuktu.getDeathLocationsArrayList().add(new DeathLocations(deadPlayer, X, Y, Z));
+
+        deadPlayer.sendMessage("You ("+deadPlayer.getName()+") died at " + "X: " + X + "  Y: " + Y + "  Z: " + Z);
         System.out.println(deadPlayer.getName() + " died at " + "X: " + X + "  Y: " + Y + "  Z: " + Z);
     }
 }
